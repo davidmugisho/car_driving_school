@@ -29,12 +29,13 @@
       <nav class="bg-navy w-100 px-2 py-1 position-fixed top-0" id="login-nav">
         <div class="d-flex justify-content-between w-100">
           <div>
-            <span class="mr-2  text-white"><i class="fa fa-phone mr-1"></i> <?= $_settings->info('contact') ?></span>
-          </div>
+          <span class="mr-2 text-white"><i class="fa fa-phone mr-1"></i> 0791434143 </span>
+
+        </div>
           <div>
             <?php if($_settings->userdata('id') > 0): ?>
                 <a href="./admin" class="mx-2 text-light">Admin Panel</a>
-              <span class="mx-2">Howdy, <?= $_settings->userdata('username') ?></span>
+              <span class="mx-2">welcome, <?= $_settings->userdata('username') ?></span>
               <span class="mx-1"><a href="<?= base_url.'classes/Login.php?f=logout' ?>"><i class="fa fa-power-off"></i></a></span>
             <?php else: ?>
               <a href="./admin" class="mx-2 text-light">Admin login</a>
